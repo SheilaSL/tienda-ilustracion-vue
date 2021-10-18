@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../layouts/Home.vue'
 
 const routes = [
   {
@@ -8,12 +8,49 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/shop',
+    name: 'Shop',
+    component: () => import(/* webpackChunkName: "tienda" */ '@/layouts/Shop.vue'),
+  },
+  {
+    path: '/carritoCompra',
+    name: 'CarritoCompra',
+    component: () => import(/* webpackChunkName: "carritocompra" */ '../layouts/CarritoCompra.vue')
+  },
+  {
+    path: '/formularioCompra',
+    name: 'FormularioCompra',
+    component: () => import(/* webpackChunkName: "formulariocompra" */ '@/layouts/FormularioCompra.vue')
+  },
+  {
+    path: '/registro',
+    name: 'Registro',
+    component: () => import(/* webpackChunkName: "registro" */ '@/layouts/Registro.vue')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import(/* webpackChunkName: "login" */ '@/layouts/Login.vue')
+  },
+  {
+    path: '/compraconfirmacion',
+    name: 'CompraConfirmacion',
+    component: () => import(/* webpackChunkName: "login" */ '@/layouts/CompraConfirmacion.vue')
+  },
+  {
+    path: '/miInformacion',
+    name: 'AuthInfo',
+    component: () => import(/* webpackChunkName: "login" */ '@/layouts/AuthInfo.vue')
+  },
+  {
+    path: '/nosotros',
+    name: 'Nosotros',
+    component: () => import(/* webpackChunkName: "login" */ '@/layouts/Nosotros.vue')
+  },
+  {
+    path: '/proceso',
+    name: 'Proceso',
+    component: () => import(/* webpackChunkName: "login" */ '@/layouts/Proceso.vue')
   }
 ]
 

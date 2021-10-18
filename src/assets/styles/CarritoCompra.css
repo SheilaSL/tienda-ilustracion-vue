@@ -1,0 +1,52 @@
+.subtotal{
+/* Flex */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 5%;
+}
+    
+.datos{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top:5%;
+  padding-bottom:5%;
+}
+p{
+  width:30%;
+}
+    
+span{
+  font-size:20px;
+}
+
+/*------- button ------*/
+.boton{
+  background: #FFC824;
+  width:100%;
+  text-align:center;
+  color: white;
+  border: none;
+  padding:12px;
+  margin-top:20px;
+  font-size:15px;
+}
+.boton a{
+  color: white;
+  text-decoration: none;
+}
+.boton:hover {
+    background-color: rgb(255, 153, 0);
+}
+
+.impuesto{
+  width:100%;
+  font-size:12px;
+  text-align:left;
+}
+/* etiqueta <hr> horizontal al usar flexbox*/
+hr {
+  flex-grow: 1;
+}
